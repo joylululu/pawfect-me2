@@ -1,0 +1,118 @@
+.container {
+  margin: 0 auto;
+}
+
+.service-content {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  @include media-breakpoint-up(md) {
+    margin-top: 164px;
+    margin-bottom: 7.5rem;
+  }
+  h2 {
+    text-align: center;
+    color: $primary;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.service-list {
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    margin-bottom: 4rem;
+    justify-content: center;
+  }
+}
+
+.service-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(md) {
+  }
+}
+
+.service-lead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: 0.25rem;
+    color: $gray-200;
+    font-weight: bold;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid $primary;
+      text-align: left;
+    }
+  }
+  p {
+    color: $gray-300;
+  }
+}
+
+.question-content {
+  margin-top: 2.5rem;
+  padding-bottom: 188px;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    margin-top: 7.5rem;
+    padding-bottom: 12.5rem;
+  }
+}
+
+.cat-body-deco {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) !important;
+    display: block;
+    width: 219px;
+    height: 154px;
+    z-index: -1;
+    background: url("/assets/images/貓mobile.png");
+    @include media-breakpoint-up(lg) {
+      left: 90%;
+      bottom: 0;
+      width: 354px;
+      height: 231px;
+      background: url("/assets/images/貓web.png");
+    }
+  }
+}
+
+.question-title-container {
+  position: relative;
+  display: inline-block;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 4.5rem;
+    }
+  }
+}
+
+.dog-print-deco {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  width: 40px;
+
+  @include media-breakpoint-up(md) {
+    top: -30px;
+    right: -50px;
+    width: 50px;
+  }
+}
